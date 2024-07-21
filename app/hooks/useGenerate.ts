@@ -4,7 +4,7 @@ import { useCallback, useState, useEffect } from "react";
 
 export const useGenerate = (count: number) => {
   const generateWords = useCallback((num: number) => {
-    return generate(num).join(" ");
+    return generate({ exactly: num, join: " " });
   }, []);
 
   const [words, setWords] = useState<string>("");
