@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { useTypings } from "./useTyping";
-import useCountdown from "./useCountDown";
+import useCountdown from "./useCountdown";
 import { useGenerate } from "./useGenerate";
 
 export type State = "start" | "run" | "finish";
